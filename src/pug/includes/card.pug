@@ -1,0 +1,30 @@
+mixin article(img, title, city, text)
+  .article
+    .img
+      img(src=img class="article__img")
+      .article__img-info 
+        span 24-26 февраля
+        .icon
+          img(src="./images/shuttle.svg", alt="", srcset="")
+    .article__wrapper
+      h1.article__title= title
+      h4.article__city= city
+      p.article__text= text
+    .article__footer
+      span 5000
+      span 74
+      span 12000
+
++article(
+  './images/1.jpg',
+  'Петербургская техническая ярмарка (ПТЯ)',
+  'г. Уфа',
+  'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptatum vel deserunt facere quidem modi autem, fuga dicta provident ab, repellendus unde nisi eius laboriosam, minus porro sequi voluptatibus atque.'
+  )
+
++article(
+  './images/1.jpg',
+  'Петербургская техническая ярмарка (ПТЯ)',
+  'г. Уфа',
+  'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptatum vel deserunt facere quidem modi autem, fuga dicta provident ab, repellendus unde nisi eius laboriosam, minus porro sequi voluptatibus atque.'
+  )

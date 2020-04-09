@@ -1,0 +1,49 @@
+@import './header';
+@import './card';
+@import './footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  color: #2E2E2E;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  @media screen and(min-width: 640px){
+    flex-direction: row;
+    width: 80vw;
+    min-height: 80vh;
+  }
+}
+
+.link {
+  font-size: .5rem;
+}

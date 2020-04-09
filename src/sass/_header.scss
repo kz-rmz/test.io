@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: #1F2229;
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1.5rem;
+    height: 30px;
+    cursor: pointer;
+  }
+  &__menu-item {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+  }
+  &__menu-item:nth-child(2) {
+    margin: 5px 0px;
+  }
+  &__title {
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Sans, sans-serif;
+    font-weight: 300;
+  }
+  &__filter {
+    width: 30px;
+    height: 30px;
+  }
+}
